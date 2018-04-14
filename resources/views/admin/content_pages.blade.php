@@ -31,7 +31,7 @@
         </tbody>
     </table>
 @endif
-{!! Html::link(route('pagesAdd'),'Новая страница') !!}
+{!! Html::link(route('pagesAdd'), 'Новая страница', ['class' => 'btn btn-french-5']) !!}
 </div>
 
 
