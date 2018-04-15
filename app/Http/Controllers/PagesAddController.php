@@ -36,7 +36,7 @@ class PagesAddController extends Controller
             }
             
             $page = new Page();
-            $page->unguard();//Снимает ограничение на заполнение любого поля
+            $page->unguard();
             $page->fill($input);
             
             if($page->save()){

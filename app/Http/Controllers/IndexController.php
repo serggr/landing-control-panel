@@ -13,7 +13,6 @@ use Mail;
 
 class IndexController extends Controller
 {
-    //
     public function execute(Request $request) {
         
         if($request->isMethod('post')) {
