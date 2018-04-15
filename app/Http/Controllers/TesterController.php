@@ -11,8 +11,7 @@ class TesterController extends Controller
     public function index() {
 
 
-        $testers = DB::table('testers')->paginate(1); 
-        //dd($testers);
+        $testers = DB::table('testers')->paginate(1);         
         return view('tester', ['testers'=>$testers]);
 
 

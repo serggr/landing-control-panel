@@ -8,7 +8,6 @@ use Validator;
 
 class PagesEditController extends Controller
 {
-    //
     public function execute(Page $page, Request $request) {
         
         if($request->isMethod('delete')){
@@ -54,7 +53,7 @@ class PagesEditController extends Controller
            
         }
         
-        /*$page = Page::find($id);*/
+        
         $old = $page->toArray();
         
         if (view()->exists('admin.pages_edit')){
